@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hafid Almunazar — Portfolio</title>
+  <meta name="description" content="Portfolio Hafid Almunazar — Mahasiswa Sistem Informasi, Universitas Komputama.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">HA</span>
+        <span class="brand-text">Hafid Almunazar</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="burger"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title">Halo, saya <span class="accent">Hafid Almunazar</span></h1>
+          <p class="hero-sub"> <span id="typing"></span><span class="cursor">|</span></p>
+          <p class="lead">Mahasiswa Program Studi Sistem Informasi — Universitas Komputama. Saya membuat solusi web & aplikasi yang rapi, responsif, dan berfokus pengalaman pengguna.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#projects">Lihat Proyek</a>
+            <a class="btn btn-outline" href="#about">Tentang Saya</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="avatar">
+            <div class="avatar-inner">HA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-card">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah mahasiswa Sistem Informasi di Universitas Komputama, tertarik pada pengembangan web, UX, dan otomasi data. Saya berfokus pada pembuatan antarmuka yang intuitif serta backend yang handal.</p>
+            <ul class="skills">
+              <li>HTML / CSS / JS</li>
+              <li>React / Vue (dasar)</li>
+              <li>Node.js / Express</li>
+              <li>Database: MySQL / MongoDB</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Hubungi Saya</a>
+          </div>
+          <aside class="about-aside">
+            <div class="profile">
+              <div class="profile-photo" aria-hidden="true">
+                <!-- gunakan gambar asli dengan mengganti src jika ada -->
+                <img src="https://via.placeholder.com/360x360?text=Hafid" alt="Foto Hafid Almunazar">
+              </div>
+              <div class="profile-meta">
+                <h3>Hafid Almunazar</h3>
+                <p class="muted">Mahasiswa Sistem Informasi<br>Universitas Komputama</p>
+                <div class="contact-mini">
+                  <a href="mailto:hafid@example.com">hafid@example.com</a>
+                  <span>•</span>
+                  <a href="#projects">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Proyek Terpilih</h2>
+        <p class="section-lead">Beberapa proyek yang saya kerjakan selama studi — prototipe, website, dan aplikasi sederhana.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media" role="img" aria-label="Project A screenshot"></div>
+            <div class="project-body">
+              <h3>Portal Akademik (Prototype)</h3>
+              <p>Portal manajemen tugas dan nilai — dibuat dengan Node.js, Express, dan MySQL. Fokus pada UX untuk dosen dan mahasiswa.</p>
+              <div class="project-tags">
+                <span>Node.js</span><span>MySQL</span><span>Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media" role="img" aria-label="Project B screenshot"></div>
+            <div class="project-body">
+              <h3>Website Personal</h3>
+              <p>Website portfolio ini — layout responsif, animasi halus, dan aksesibilitas dasar.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media" role="img" aria-label="Project C screenshot"></div>
+            <div class="project-body">
+              <h3>Dashboard Analitik</h3>
+              <p>Dashboard sederhana untuk visualisasi dataset akademik menggunakan chart interaktif.</p>
+              <div class="project-tags">
+                <span>Charts</span><span>Data</span><span>UX</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p class="section-lead">Tertarik berkolaborasi atau ingin melihat lebih banyak karya? Kirim pesan kepada saya.</p>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required placeholder="Nama Anda">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="email@domain.com">
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tulis pesan Anda..."></textarea>
+
+            <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+            <p id="form-msg" class="form-msg" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-info">
+            <h3>Detail Kontak</h3>
+            <p>Email: <a href="mailto:hafid@example.com">hafid@example.com</a></p>
+            <p>Universitas Komputama — Program Studi Sistem Informasi</p>
+            <p class="muted">Atau hubungi lewat LinkedIn / GitHub (link disesuaikan).</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Hafid Almunazar — Universitas Komputama. All rights reserved.</p>
+      <nav class="footer-nav" aria-label="footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
